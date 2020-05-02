@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{9FE7482D-C125-2809-4E97-8E32E9F5E105}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameMenu.cs">
+    <Files>
+      <File FileName="Assets/Scripts/GameManager.cs" Line="26" Column="6" />
+      <File FileName="Assets/Scripts/AudioManager.cs" />
+      <File FileName="Assets/Scripts/BuildManager.cs" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="59" Column="43" />
+      <File FileName="Assets/Scripts/EnemySpawner.cs" />
+      <File FileName="Assets/Scripts/Wave.cs" />
+      <File FileName="Assets/Scripts/GameMenu.cs" Line="35" Column="34" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TD—Test的副本" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="GameMenu.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="eb2df71c-8394-4fb3-806b-a56a7660a31b" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
