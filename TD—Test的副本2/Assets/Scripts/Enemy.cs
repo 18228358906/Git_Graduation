@@ -15,11 +15,17 @@ public class Enemy : MonoBehaviour
     public float magicalDefence=30;
     public bool enemyLive=true;
     public Wave wave;
+
+    [HideInInspector]
+    public float unusualTime=0f;//异常状态持续时间
+    [HideInInspector]
+    public float nowSpeed;//当前速度
     // Start is called before the first frame update
     void Start()
     {
         positions = Waypoints.positions;
         totalHp = hp;
+        nowSpeed = Speed;
         //hpSlider = GetComponentsInChildren<Slider>();
        
     }
@@ -27,12 +33,19 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (unusualTime > 0)
+            unusualTime -= Time.deltaTime;
+        else
+        {
+            unusualTime = 0f;
+            nowSpeed = Speed;
+        }
         Move();
     }
     void Move()
     {
         if (index > positions.Length - 1) return;
-        transform.Translate((positions[index].position - transform.position).normalized * Time.deltaTime * Speed);
+        transform.Translate((positions[index].position - transform.position).normalized * Time.deltaTime * nowSpeed);
         if (Vector3.Distance(positions[index].position, transform.position) < 0.2f)
         {
             index++;
@@ -71,7 +84,13 @@ public class Enemy : MonoBehaviour
         Destroy(effect, 1.5f);
         Destroy(this.gameObject);
         
-    }   
+    } 
+    //减速效果
+    public void SlowSpeed(float f,float durationtime)//减速百分比和持续时间
+    {
+        this.nowSpeed = this.Speed * f;
+        this.unusualTime = durationtime;
+    }
     
 }
     
