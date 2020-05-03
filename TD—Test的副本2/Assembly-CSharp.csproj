@@ -77,31 +77,31 @@
     <Compile Include="Assets\Scripts\Wave.cs" />
     <Compile Include="Assets\Scripts\Waypoints.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/Users/wangzhaohui/Desktop/GitDemo/TD—Test的副本2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>/Users/wangzhaohui/Desktop/Git_Graduation/TD—Test的副本2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>/Users/wangzhaohui/Desktop/GitDemo/TD—Test的副本2/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>/Users/wangzhaohui/Desktop/Git_Graduation/TD—Test的副本2/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/wangzhaohui/Desktop/GitDemo/TD—Test的副本2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/wangzhaohui/Desktop/Git_Graduation/TD—Test的副本2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>/Users/wangzhaohui/Desktop/GitDemo/TD—Test的副本2/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>/Users/wangzhaohui/Desktop/Git_Graduation/TD—Test的副本2/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>/Users/wangzhaohui/Desktop/GitDemo/TD—Test的副本2/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>/Users/wangzhaohui/Desktop/Git_Graduation/TD—Test的副本2/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/wangzhaohui/Desktop/GitDemo/TD—Test的副本2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/wangzhaohui/Desktop/Git_Graduation/TD—Test的副本2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>/Users/wangzhaohui/Desktop/GitDemo/TD—Test的副本2/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>/Users/wangzhaohui/Desktop/Git_Graduation/TD—Test的副本2/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/wangzhaohui/Desktop/GitDemo/TD—Test的副本2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/wangzhaohui/Desktop/Git_Graduation/TD—Test的副本2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>/Users/wangzhaohui/Desktop/GitDemo/TD—Test的副本2/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>/Users/wangzhaohui/Desktop/Git_Graduation/TD—Test的副本2/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2019.3.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
