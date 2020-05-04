@@ -10,6 +10,7 @@ public class BuildManager : MonoBehaviour
     public TurretData laserTurretData;
     public TurretData missileTurretData;
     public TurretData standardTurretData;
+    public TurretData lightingTurretData;
     private TurretData selectedTurretData;//表示当前选择的炮台（要建造的炮台）
     private int money = 1000;
     public Text moneyText;
@@ -101,6 +102,13 @@ public class BuildManager : MonoBehaviour
         if (isOn)
         {
             selectedTurretData = standardTurretData;
+        }
+    }
+    public void OnLightingSelected(bool isOn)
+    {
+        if (isOn)
+        {
+            selectedTurretData = lightingTurretData;
         }
     }
     void ShowUpgradedUI(Vector3 pos, bool isDisableUpgraded=false)

@@ -12,9 +12,12 @@ public class ItemMakeUse2 : MonoBehaviour
 
     public Text numText;
 
+    AudioSource sounEffects;
+
     void Start()
     {
         isUseItem = false;
+        sounEffects = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -32,6 +35,7 @@ public class ItemMakeUse2 : MonoBehaviour
                 {
                     GameObject item = GameObject.Instantiate(obj, new Vector3(hit.point.x,hit.point.y+10,hit.point.z), Quaternion.identity);
                     item.GetComponent<InpactItem>().SetTarget(hit.point);
+                    sounEffects.Play();
                 }
                 isUseItem = false;
                 num--;

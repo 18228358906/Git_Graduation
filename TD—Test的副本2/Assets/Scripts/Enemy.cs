@@ -16,6 +16,8 @@ public class Enemy : MonoBehaviour
     public bool enemyLive=true;
     public Wave wave;
 
+    public Animator movie;
+
     [HideInInspector]
     public float unusualTime=0f;//异常状态持续时间
     [HideInInspector]
@@ -45,6 +47,8 @@ public class Enemy : MonoBehaviour
     void Move()
     {
         if (index > positions.Length - 1) return;
+        //transform.LookAt(positions[index].position);
+        //transform.forward = positions[index].position - transform.position;
         transform.Translate((positions[index].position - transform.position).normalized * Time.deltaTime * nowSpeed);
         if (Vector3.Distance(positions[index].position, transform.position) < 0.2f)
         {

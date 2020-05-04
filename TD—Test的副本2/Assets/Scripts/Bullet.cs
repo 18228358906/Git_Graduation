@@ -35,8 +35,9 @@ public class Bullet : MonoBehaviour
         {
             other.GetComponent<Enemy>().TakeDamage(damage);
             GameObject effect= GameObject.Instantiate(explosionEffectPrefab, transform.position, transform.rotation);
-            Destroy(effect, 1);
             Destroy(this.gameObject);
+            Destroy(effect, 1);
+            
         }
     }
     void Die()

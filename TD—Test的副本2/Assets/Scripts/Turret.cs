@@ -28,10 +28,13 @@ public class Turret : MonoBehaviour
     public float damageRate=70;
     public LineRenderer laserRender;
     public GameObject laserEffect;
+
+    AudioSource soundEffects;//射击音效
    
     private void Start()
     {
         timer = attackRateTime;
+        soundEffects = GetComponent<AudioSource>();
        
     }
     private void Update()
@@ -83,8 +86,9 @@ public class Turret : MonoBehaviour
         }
         if (enemys.Count > 0)
         {
-            GameObject bullet = GameObject.Instantiate(bulletPrefab, firPositon.position, firPositon.rotation);
+            GameObject bullet = GameObject.Instantiate(bulletPrefab, firPositon.position, Quaternion.identity); //firPositon.rotation);
             bullet.GetComponent<Bullet>().SetTarget(enemys[0].transform);
+            soundEffects.Play();
         }
         else
         {

@@ -15,5 +15,6 @@ public enum TurretType
 {
     LaserTurret,
     MissileTurret,
-    StandardTurret
+    StandardTurret,
+    LightingTurret
 }
