@@ -202,6 +202,9 @@ MonoBehaviour:
   damageRate: 70
   laserRender: {fileID: 0}
   laserEffect: {fileID: 0}
+  damageType: 0
+  bulletDamage: 200
+  bulletSpeed: 200
 --- !u!54 &6502029709450437842
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -229,7 +232,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 25
+  m_Radius: 30
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &4127775739145528798
 AudioSource:

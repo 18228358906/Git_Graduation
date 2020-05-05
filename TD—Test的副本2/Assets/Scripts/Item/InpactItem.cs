@@ -7,10 +7,12 @@ public class InpactItem : MonoBehaviour
     public float damage = 0f;
     private float speed = 30f;
     public Vector3 target;
+
+    DamageType type;
     // Start is called before the first frame update
     void Start()
     {
-        
+        type = DamageType.Physics;
     }
 
     // Update is called once per frame
@@ -36,7 +38,7 @@ public class InpactItem : MonoBehaviour
         {
             if (other.tag == "Enemy")
             {
-                other.GetComponent<Enemy>().TakeDamage(damage);
+                other.GetComponent<Enemy>().TakeDamage(damage,type);
             }            
         }
         Destroy(this.gameObject);

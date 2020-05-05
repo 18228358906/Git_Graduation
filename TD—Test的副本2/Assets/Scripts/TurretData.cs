@@ -9,7 +9,7 @@ public class TurretData
     public int cost;
     public GameObject turretUpgradedPrefab;
     public int costUpgraded;
-    public TurretType type;
+    public TurretType type;    
 }   
 public enum TurretType
 {
@@ -17,4 +17,10 @@ public enum TurretType
     MissileTurret,
     StandardTurret,
     LightingTurret
+}
+public enum DamageType
+{
+    Magic,
+    Physics,
+    Mix
 }

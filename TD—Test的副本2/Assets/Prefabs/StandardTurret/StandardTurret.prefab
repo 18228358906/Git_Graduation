@@ -195,6 +195,13 @@ MonoBehaviour:
     type: 3}
   firPositon: {fileID: 8162353755183574279}
   head: {fileID: 2015157705724736137}
+  useLaser: 0
+  damageRate: 70
+  laserRender: {fileID: 0}
+  laserEffect: {fileID: 0}
+  damageType: 1
+  bulletDamage: 60
+  bulletSpeed: 50
 --- !u!135 &7812403013218709798
 SphereCollider:
   m_ObjectHideFlags: 0

@@ -4,16 +4,11 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public int damage = 50;
-    public float speed = 20;
-    private Transform target;
-    public GameObject explosionEffectPrefab;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    float damage ;
+    float speed;
+    private Transform target;//目标
+    public GameObject explosionEffectPrefab;//特效
+     DamageType type;
     // Update is called once per frame
     void Update()
     {
@@ -33,7 +28,7 @@ public class Bullet : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            other.GetComponent<Enemy>().TakeDamage(damage);
+            other.GetComponent<Enemy>().TakeDamage(damage,type);
             GameObject effect= GameObject.Instantiate(explosionEffectPrefab, transform.position, transform.rotation);
             Destroy(this.gameObject);
             Destroy(effect, 1);
@@ -45,5 +40,26 @@ public class Bullet : MonoBehaviour
         GameObject effect = GameObject.Instantiate(explosionEffectPrefab, transform.position, transform.rotation);
         Destroy(effect, 1);
         Destroy(this.gameObject);
+    }
+
+    public DamageType SetGetBulletType
+    {
+        get
+        {
+            return this.type;
+        }
+        set
+        {
+            this.type = value;
+        }
+    }
+
+    public void SetDamage(float _damage)
+    {
+        this.damage = _damage;
+    }
+    public void SetSpeed(float _speed)
+    {
+        this.speed = _speed;
     }
 }

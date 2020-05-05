@@ -8,13 +8,13 @@ public class IceItem : MonoBehaviour
     public float slowDown=0f;//减速百分比
     //public float continueDamage=0f;//持续伤害量
     public float durationTime=0f;//异常状态持续时间
-
+    DamageType type; 
     public List<GameObject> enemys = new List<GameObject>();//敌人组
 
 
     void Start()
     {
-        
+        type = DamageType.Magic;
     }
 
     void Update()
@@ -30,7 +30,7 @@ public class IceItem : MonoBehaviour
                 for (int i = 0; i < enemys.Count; i++)
                 {
                     enemys[i].GetComponent<Enemy>().SlowSpeed(slowDown, durationTime);
-                    enemys[i].GetComponent<Enemy>().TakeDamage(damage);
+                    enemys[i].GetComponent<Enemy>().TakeDamage(damage,type);
                     //enemys[i].GetComponent<Enemy>().TakeDamage(continueDamage);
                 }
             }                

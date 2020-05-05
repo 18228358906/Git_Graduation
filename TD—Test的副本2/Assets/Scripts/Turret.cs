@@ -19,17 +19,20 @@ public class Turret : MonoBehaviour
             enemys.Remove(other.gameObject);
         }
     }
-    public float attackRateTime =1f;//多少秒攻击一次
+    public float attackRateTime =1f;//攻击间隔
     public float timer = 0f;
     public GameObject bulletPrefab;
     public Transform firPositon;
     public Transform head;
     public bool useLaser = false;
-    public float damageRate=70;
+    public float damageRate=70;//持续伤害-魔法塔用
     public LineRenderer laserRender;
     public GameObject laserEffect;
 
     AudioSource soundEffects;//射击音效
+    public DamageType damageType;//伤害类型
+    public float bulletDamage;//炮塔伤害
+    public float bulletSpeed;//炮弹飞行速度
    
     private void Start()
     {
@@ -59,7 +62,7 @@ public class Turret : MonoBehaviour
             if (enemys .Count> 0)
             {
                 laserRender.SetPositions(new Vector3[] { firPositon.position, enemys[0].transform.position });
-                enemys[0].GetComponent<Enemy>().TakeDamage(damageRate* Time.deltaTime);
+                enemys[0].GetComponent<Enemy>().TakeDamage(damageRate* Time.deltaTime,damageType);
                 laserEffect.transform.position = enemys[0].transform.position;
                 Vector3 pos = transform.position;
                 pos.y = enemys[0].transform.position.y;
@@ -76,6 +79,7 @@ public class Turret : MonoBehaviour
             Vector3 targetPositon = enemys[0].transform.position;
             targetPositon.y = head.position.y;
             head.LookAt(targetPositon);
+            //head.forward = new Vector3(targetPositon.x - head.position.x,0,targetPositon.z-head.position.z);
         }
     }
     void Attack()
@@ -88,6 +92,9 @@ public class Turret : MonoBehaviour
         {
             GameObject bullet = GameObject.Instantiate(bulletPrefab, firPositon.position, Quaternion.identity); //firPositon.rotation);
             bullet.GetComponent<Bullet>().SetTarget(enemys[0].transform);
+            bullet.GetComponent<Bullet>().SetDamage(bulletDamage);
+            bullet.GetComponent<Bullet>().SetSpeed(bulletSpeed);
+            bullet.GetComponent<Bullet>().SetGetBulletType = this.damageType;
             soundEffects.Play();
         }
         else

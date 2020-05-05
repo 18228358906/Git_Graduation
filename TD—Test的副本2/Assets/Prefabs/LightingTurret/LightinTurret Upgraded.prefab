@@ -281,6 +281,9 @@ MonoBehaviour:
   damageRate: 70
   laserRender: {fileID: 0}
   laserEffect: {fileID: 0}
+  damageType: 0
+  bulletDamage: 200
+  bulletSpeed: 200
 --- !u!54 &8642345930162646120
 Rigidbody:
   m_ObjectHideFlags: 0

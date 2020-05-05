@@ -20,7 +20,8 @@ public class GameMenu : MonoBehaviour
     }
     public void OnStartGame()
     {
-        SceneManager.LoadScene(1);
+        Application.LoadLevel(Application.loadedLevel + 1);
+        //SceneManager.LoadScene(1);
     }
     public  void OnCourse()
     {
