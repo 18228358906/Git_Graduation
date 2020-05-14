@@ -192,14 +192,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemys: []
-  attackRateTime: 2.5
+  attackRateTime: 5
   timer: 0
   bulletPrefab: {fileID: 3113973330883373997, guid: 1ef4ab5d47674394fbacc7b40298039f,
     type: 3}
   firPositon: {fileID: 8129384937291309745}
   head: {fileID: 2803847942495692310}
   useLaser: 0
-  damageRate: 70
+  damageRate: 150
   laserRender: {fileID: 0}
   laserEffect: {fileID: 0}
   damageType: 0

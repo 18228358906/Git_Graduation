@@ -12,7 +12,8 @@ public class BuildManager : MonoBehaviour
     public TurretData standardTurretData;
     public TurretData lightingTurretData;
     private TurretData selectedTurretData;//表示当前选择的炮台（要建造的炮台）
-    private int money = 1000;
+    public  int money = 1000;
+    public static int getmoney;
     public Text moneyText;
     public GameObject upgradeCanvas;
     public Button buttonUpgrade;
@@ -20,18 +21,17 @@ public class BuildManager : MonoBehaviour
     
     void ChangeMoney(int change = 0)
     {
-        money += change;
-        moneyText.text = "$" + money;
-    }
-    public void GetMoney(int getmoney=0)
-    {
-        money += getmoney;
-        moneyText.text = "$" + money;
-    }
+        money += change;       
+    }    
    
     void Update()
     {
-        
+        moneyText.text = "$" + money;
+        if(getmoney != 0)
+        {
+            ChangeMoney(getmoney);
+            getmoney = 0;
+        }
         if (Input.GetMouseButtonDown(0))
         {
             if (EventSystem.current.IsPointerOverGameObject()==false)

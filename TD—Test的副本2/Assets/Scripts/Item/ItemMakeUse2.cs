@@ -35,7 +35,7 @@ public class ItemMakeUse2 : MonoBehaviour
                 {
                     GameObject item = GameObject.Instantiate(obj, new Vector3(hit.point.x,hit.point.y+10,hit.point.z), Quaternion.identity);
                     item.GetComponent<InpactItem>().SetTarget(hit.point);
-                    sounEffects.Play();
+                    //sounEffects.Play();
                 }
                 isUseItem = false;
                 num--;

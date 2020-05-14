@@ -73,12 +73,16 @@
     <Compile Include="Assets\Scripts\Item\InpactItem.cs" />
     <Compile Include="Assets\Scripts\Item\ItemMakeUse1.cs" />
     <Compile Include="Assets\Scripts\Item\ItemMakeUse2.cs" />
+    <Compile Include="Assets\Scripts\Item\ItemMakeUse3.cs" />
     <Compile Include="Assets\Scripts\MapCube.cs" />
     <Compile Include="Assets\Scripts\Turret.cs" />
     <Compile Include="Assets\Scripts\TurretData.cs" />
     <Compile Include="Assets\Scripts\View_Control.cs" />
     <Compile Include="Assets\Scripts\Wave.cs" />
     <Compile Include="Assets\Scripts\Waypoints.cs" />
+    <None Include="Assets\Output\Magic Ice Vol.1\Shaders\ParticleCook-Transparent-AlphaBlend-Diffuse.shader" />
+    <None Include="Assets\Output\Magic Ice Vol.1\Shaders\ParticleCook-Transparent-AlphaBlend-Diffuse-Z.shader" />
+    <None Include="Assets\Output\Magic Ice Vol.1\Shaders\ParticleCook-Transparent-Additive-Diffuse.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Study/Git_Graduation/TD—Test的副本2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

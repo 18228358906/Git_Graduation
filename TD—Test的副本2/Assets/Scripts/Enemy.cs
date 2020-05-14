@@ -25,12 +25,13 @@ public class Enemy : MonoBehaviour
 
     public float magicalDefence=5f;
     public float physicalDefence=5f;
+   
     // Start is called before the first frame update
     void Start()
     {
         positions = Waypoints.positions;
         totalHp = hp;
-        nowSpeed = Speed;
+        nowSpeed = Speed;      
         //hpSlider = GetComponentsInChildren<Slider>();
        
     }
@@ -49,6 +50,7 @@ public class Enemy : MonoBehaviour
     }
     void Move()
     {
+        
         if (index > positions.Length - 1) return;
         //transform.LookAt(positions[index].position);
         //transform.forward = positions[index].position - transform.position;
@@ -108,6 +110,10 @@ public class Enemy : MonoBehaviour
     }
     void Die()
     {
+        float f = Random.Range(0, 10);
+        if (f >= 8f)
+            ItemMakeUse3.isAdd = true;
+        print(f);
         enemyLive = false;
         GameObject effect = GameObject.Instantiate(explosionEffect, transform.position, transform.rotation);
         Destroy(effect, 1.5f);

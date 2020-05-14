@@ -211,7 +211,6 @@ MonoBehaviour:
   explosionEffect: {fileID: 1945022853052296838, guid: b96378fd1576d401196b6395be1af9a7,
     type: 3}
   hpSlider: {fileID: 6566899618852690094}
-  magicalDefence: 30
   enemyLive: 1
   wave:
     enemyPrefab: {fileID: 0}
@@ -219,8 +218,11 @@ MonoBehaviour:
     rate: 0
     PhysicDefence: 0
     MagicDefence: 0
+  movie: {fileID: 0}
   unusualTime: 0
   nowSpeed: 0
+  magicalDefence: 0
+  physicalDefence: 0
 --- !u!1 &2232539958151726760
 GameObject:
   m_ObjectHideFlags: 0

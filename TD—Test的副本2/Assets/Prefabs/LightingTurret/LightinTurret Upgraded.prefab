@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemys: []
-  attackRateTime: 2.5
+  attackRateTime: 3.5
   timer: 0
   bulletPrefab: {fileID: 3113973330883373997, guid: 1ef4ab5d47674394fbacc7b40298039f,
     type: 3}
@@ -282,7 +282,7 @@ MonoBehaviour:
   laserRender: {fileID: 0}
   laserEffect: {fileID: 0}
   damageType: 0
-  bulletDamage: 200
+  bulletDamage: 250
   bulletSpeed: 200
 --- !u!54 &8642345930162646120
 Rigidbody:

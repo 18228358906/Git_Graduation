@@ -6,7 +6,6 @@ public class IceItem : MonoBehaviour
 {
     public float damage=0f;//伤害
     public float slowDown=0f;//减速百分比
-    //public float continueDamage=0f;//持续伤害量
     public float durationTime=0f;//异常状态持续时间
     DamageType type; 
     public List<GameObject> enemys = new List<GameObject>();//敌人组
@@ -39,7 +38,6 @@ public class IceItem : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
         if (!enemys.Exists(p => p == other.gameObject))
         {
             if (other.tag == "Enemy")
